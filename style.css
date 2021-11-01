@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+body {
+  background:rgb(26, 25, 25);
+ font-family: 'Audiowide', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  color:white;
+  font-size: 150px;
+  text-align:center;
+  animation: glow 2s infinite alternate linear;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px rgba(255,255,255,.8),
+                 0 0 20px rgba(255,255,255,.8),
+                 0 0 30px rgba(255,255,255,.8),
+                 0 0 40px rgba(0, 100, 151,.8),
+                 0 0 50px rgba(0, 100, 151,.8),
+                 0 0 60px rgba(0, 100, 151,.5),
+                 0 0 70px rgba(0, 100, 151,.5),
+                 0 0 90px rgba(0, 100, 151,.5),
+                 0 0 100px rgba(0, 100, 151,.5);
+  }
+  100% {
+    text-shadow: 0 0 2px rgba(255,255,255,.8),
+                 0 0 8px rgba(255,255,255,.8),
+                 0 0 10px rgba(55,255,255,.8),
+                 0 0 20px rgba(50, 100, 151,.5),
+                 0 0 30px rgba(50, 100, 151,.5),
+                 0 0 40px rgba(50, 100, 151,.5),
+                 0 0 50px rgba(50, 100, 151,.5),
+                 0 0 100px rgba(50, 100, 151,.5);
+  }
+}
